@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Modul2Activity">
+
+    <LinearLayout
+        android:id="@+id/viewform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_form">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:id="@+id/ptxt_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_usia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_nama"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/umur"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_usia"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/jenis_kelamin"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_telepon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_gender"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/nomor_telepon"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_telepon"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/email"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_hobi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_email"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/hobi"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ptxt_alasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ptxt_hobi"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/alasan"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
+                <TextView
+                    android:id="@+id/hasil_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/ptxt_nama"/>
+                <TextView
+                    android:id="@+id/hasil_usia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usia"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_usia"
+                    android:layout_below="@+id/hasil_nama"/>
+                <TextView
+                    android:id="@+id/hasil_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_gender"
+                    android:layout_below="@+id/hasil_usia"/>
+                <TextView
+                    android:id="@+id/hasil_telepon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telepon"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_telepon"
+                    android:layout_below="@+id/hasil_gender"/>
+                <TextView
+                    android:id="@+id/hasil_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_email"
+                    android:layout_below="@+id/hasil_telepon"/>
+                <TextView
+                    android:id="@+id/hasil_hobi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hobi"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_hobi"
+                    android:layout_below="@+id/hasil_email"/>
+                <TextView
+                    android:id="@+id/hasil_alasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alasan"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/ptxt_alasan"
+                    android:layout_below="@+id/hasil_hobi"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/menubtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MENU"
+                    android:backgroundTint="@color/purple_200"
+                    android:layout_marginTop="20dp" />
+                <Button
+                    android:id="@+id/exitbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="KELUAR"
+                    android:backgroundTint="@color/teal_200"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
